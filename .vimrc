@@ -13,6 +13,8 @@ if has("gui_running")
 		behave mswin
 		set shell=C:\Windows\system32\cmd.exe
 
+		let g:gitgutter_realtime = 0
+
 		set lines=46 columns=167
 		set guifont=Fira\ Mono:h10:cANSI
 	endif
@@ -31,6 +33,7 @@ if has("gui_running")
 	set list
 else
 	set mouse=a
+	set cursorline
 
 	set background=dark
 	colorscheme solarized
@@ -39,8 +42,6 @@ endif
 set nobackup
 set nowritebackup
 
-set ruler
-set cursorline
 set scrolloff=10
 set textwidth=80
 set tabstop=4
