@@ -3,7 +3,7 @@
 	email = <email>
 [alias]
 	logf = log --pretty=format:\"%C(auto)%h - %an, %ar\n%s\n\" --all --graph
-	logc = log --pretty=format:\"%Cgreen%ar%Creset %C(auto)%h%Creset %s\"
+	logc = log --pretty=format:\"%Cgreen%ar%Creset %C(auto)%h%Creset %Cred%an%Creset %s\"
 	diffs = diff --stat
 [core]
 	editor = vim
